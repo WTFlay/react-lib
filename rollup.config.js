@@ -9,7 +9,8 @@ export default {
     format: 'cjs'
   },
   external: [
-    'react'
+    'react',
+    'prop-types'
   ],
   plugins: [
     resolve(),
