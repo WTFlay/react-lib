@@ -1215,7 +1215,9 @@ var Item = function Item(_ref) {
   var handleClick = React.useCallback(function () {
     setCount(count + 1);
   }, [count]);
-  return React__default.createElement("div", null, React__default.createElement("p", null, title), React__default.createElement("button", null, "Click"), count && React__default.createElement("span", null, "Clicked: ", count));
+  return React__default.createElement("div", null, React__default.createElement("p", null, title), React__default.createElement("button", {
+    onClick: handleClick
+  }, "Click"), count && React__default.createElement("span", null, "Clicked: ", count));
 };
 
 Item.propTypes = {
