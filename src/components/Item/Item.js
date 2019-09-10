@@ -11,7 +11,7 @@ const Item = ({ title }) => {
   return (
     <div>
       <p>{title}</p>
-      <button>Click</button>
+      <button onClick={handleClick}>Click</button>
       {count && <span>Clicked: {count}</span>}
     </div>
   );
